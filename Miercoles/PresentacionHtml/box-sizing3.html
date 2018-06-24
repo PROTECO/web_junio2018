@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>box-sizing</title>
+</head>
+
+<body>
+
+<div id="contenedor">
+		    <div id="cuadro2" ></div>
+    <div id="cuadro3" ></div>
+</div>
+
+		<center><p>box-sizing:<span>border-box</span></p></center>
+		<a title="placeholder" href="placeholder4.html"><img src="img/logo.jpg" alt="next"></a>
+
+
+	
+<style>
+
+
+
+
+
+	#contenedor{
+
+	height: 100px;
+	width: 300px;
+	background:lightgrey;
+	color:#fff;
+	top:50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,-10%);/*(x,y)*/
+	}
+
+	
+	p{
+		margin-top:200px;
+		font-size: 100px;
+	}
+
+	span{
+		color: red;
+		font-size:40px;
+	}
+
+
+
+        #cuadro3 {
+        	width: 50px;
+        	height: 50px;
+        	left: 0px;
+        	padding: 10px;
+            background-color: yellow;
+            padding: 10px;
+        	/*box-sizing: border-box;*/
+        	box-sizing: border-box;
+        }
+
+        #cuadro2 {
+        	width: 50px;
+        	height: 50px;
+        	right: 0px;
+     		border: 10px;
+     		border-color: red;
+     	padding: 10px;
+			background-color: green;
+			box-sizing: border-box;
+
+        }
+
+
+        	img{
+		position:fixed;
+		bottom: 10px;
+		right: 10px;
+	}
+
+</style>
+	
+</body>
+</html>

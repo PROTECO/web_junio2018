@@ -1,0 +1,109 @@
+h1{
+	text-align: center;
+}
+
+img {
+	width: 500px; 
+	height: 500px;
+	opacity: .3;
+	/*padding: 30px;
+	border: 20px solid black;
+	margin: 200px;*/
+}
+
+#padding{
+	color:blue;
+	background: yellow;
+	/*padding: 50; General*/
+	/*padding-top: 50px;
+	padding-right: 70px;
+	padding-bottom: 80px;
+	padding-left: 15px;*/
+	padding: 50px 70px 80px 15px;
+}
+
+#border{
+	color: white;
+	background: red;
+	border: 50px solid black;
+}
+
+#margin{
+	color: purple;
+	background: orange;
+	margin: 45px 0px 400px 45px; 
+}
+
+.caja{
+	color: white;
+	background: purple;
+	font-size: 30px;
+	width: 100px;
+	height: 100px;
+	position: static;
+	/*display: inline-block;*/
+}
+
+.cajapapa{
+	position: fixed;
+}
+
+
+
+.container{
+	position: relative;
+}
+
+#texto{
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

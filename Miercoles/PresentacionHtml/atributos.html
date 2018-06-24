@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Inputs</title>
+</head>
+<body>
+
+	<center><p>Nuevos argumentos CSS</p></center>
+	<!--checked-->
+	<div id="lista">
+	<form >
+	<a id="position1" href="position1.html"><label >position</label></a>
+	<input type="checkbox" name="position" ><br><br>
+
+	<label for="outline">outline</label>
+	<input type="checkbox" name="outline" id="outline"><br><br>
+
+	<label for="box-sizing">box-sizing</label>
+	<input type="checkbox" name="box-sizing" id="box-sizing"><br><br>
+
+	<label for="placeholder">placeholder</label>
+	<input type="checkbox" name="placeholder" id="placeholder"><br><br>
+	<h3>¿Estas listo?</h3>
+
+	<label for="si" >sí</label>
+	<input type="radio" id="si" name="valor">
+
+	<label for="no" >no</label>
+	<input type="radio" id="no" name="valor">
+
+
+
+  <button type="reset" value="Reset">Reiniciar</button>
+</form>
+	</div>
+
+
+
+	<style>
+
+		a:link
+		{ 
+		text-decoration:none; 
+		color:black;
+
+		} 
+
+		a{
+		  color: black;
+		}
+
+		a:hover{
+		  color: red;
+		  font-size: 15px;
+		}
+
+		a:active{
+		  color: blue;
+		}
+
+
+		label{
+		font-size: 30px;
+		}
+
+		p{
+		font-size: 20;
+		margin-top:80px;
+		font-size: 60px;
+	}
+		
+	#lista{
+		position: absolute;
+		top:50%;
+		left: 50%;
+		transform: translate(-50%,-40%);
+	}
+
+
+	input[type="checkbox"],input[type="radio"]{
+
+    width:19px;
+    height:19px;
+    cursor:pointer;
+	}
+	
+	</style>
+</body>
+</html>

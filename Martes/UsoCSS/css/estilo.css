@@ -1,0 +1,47 @@
+body{
+	background: black;
+	margin-left: 50px;
+}
+*{
+	color:white;
+}
+img{
+	width: 500px;
+	height: 500px;
+}
+#tituloprincipal{
+	font-family: 'Spirax', cursive;
+	size: 50px;
+	text-align: center;
+	background: white;
+	color: black;
+}
+.Publicidad{
+	position: fixed;
+	top:5em;
+	right: 1em;
+}
+section{
+	width: 550px;
+	text-align: center;
+}
+/*Esto es un comentario */
+#footerprincipal{
+	margin-top: 20px;
+	background: white;
+	color: black;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+li{
+	background: white;
+	width: 500px;
+	margin: 0.5em 0 .2em .2em;
+	padding: 0.3em;
+	border-right: 1em solid blue;
+	text-align: center;
+	list-style-type: none;
+}

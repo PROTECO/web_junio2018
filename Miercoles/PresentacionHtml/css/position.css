@@ -1,0 +1,102 @@
+
+
+
+/*LOS CAMBIOS EN EL HTML ESTARÁN EN COMENTARIOS: LES LLAMARÉ PENDIENTE*/
+
+body{
+	padding: 0;
+	margin: 0;
+	background:url(../img/ceremonia.jpg) no-repeat top ; 
+	height: 100vh;
+	/*Pendiente 1*/
+	background-size: cover; /*para estirar la imagen*/
+}
+
+
+#cajaLogin{
+
+	height: 450px;
+	width: 220px;
+	background-color: black;
+	color:white;
+	padding: 70px 30px 70px 30px;
+	top:50%;
+	left:50%;
+	position: absolute;
+	transform: translate(-50%,-50%); /*(x,y)*/
+	box-sizing: border-box;
+	
+	border-radius: 50% 50% 20% 20%;
+	z-index: 200;
+
+}
+
+
+
+input{
+	outline: none;
+}
+
+#cajaLogin input[type="submit"]{
+
+	background-color: red;
+	border-radius: 20px;
+	color:white;
+	float: center;
+	display: inline;
+	width: 80px;
+	outline: none;
+	border:0px;
+	margin-left: 40px;
+	padding: 1px;
+	margin-bottom:20px; /*top -->br*/
+
+}
+
+
+#cajaLogin input[type="email"]{
+
+	margin-bottom:20px;
+}
+
+#cajaLogin input:hover{
+	color:#78A2EF;
+	font-size: 12px;
+
+}
+
+
+
+#cajaLogin a{
+	color:white;
+	text-align: center;
+	font-size: 12px;
+	text-decoration: none;
+	
+}
+
+
+/*Pendiente 2*/
+#gradiente{
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	opacity: 0.8;
+	/*Pendiente 3*/
+	z-index: 100;
+}
+
+/*Pendiente 4*/
+#cajaLogin input{
+
+	width:100%;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+
+
+
+
+
+
