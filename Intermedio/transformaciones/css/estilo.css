@@ -1,0 +1,62 @@
+body {
+	margin: 0;
+	background-color: #F2F2D6;
+}
+
+#contenedor {
+	display: flex;
+	justify-content: center;
+}
+
+.caja {
+	margin-top: 150px;
+	margin-left: 15px;
+	width: 150px;
+	height: 150px;
+	background-color: #1C7CE7;
+	color: white;
+	font-size: 35px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 150px;
+	transition: all 1s;
+}
+
+.caja:nth-child(1) { /*TRASLADAR*/
+	/*No afecta el flujo de los elementos*/
+	background-color: red; 
+	transform: translateX(100px); /*Trabaja con positivos y negativos*/
+	transform: translateY(100px); /*Trabaja con positivos y negativos*/
+	transform: translate(50px, 50px); /*translate(x, y);*/
+
+}
+
+.caja:nth-child(2) { /*ROTAR*/
+	/*Se puede utilizar:
+		- Radianes (#rad);
+		- Gradientes (#grad);
+		- Vueltas (#turn);*/
+	transform: rotate(180deg);
+}
+
+.caja:nth-child(3) { /*ESCALAR o REDIMENSIONAR*/
+	/*Es a partir al ancho y alto que ya tiene asignado.
+	  Es como si multiplicara*/
+  	transform: scaleX(2); /*Pueden ser puntos decimales*/
+  	transform: scaleY(2);
+  	transform: scale(2, 2); /*(x , y)*/
+
+}
+
+.caja:nth-child(4) { /*SESGAR o DISTORCIONAR*/
+	/*Trabaja en grados*/
+	transform: skewX(45deg);
+	transform: skewY(20deg);
+	transform: skew(45deg, 50deg); /*(x, y)*/
+
+
+	/*Para aplicar VARIAS transformaciones al mismo tiempo*/
+	transform: translateY(100px) rotate(50deg);
+	/*DEBE ESTAR EN LA MISMA LINEA. Si no NO funciona*/
+
+}
