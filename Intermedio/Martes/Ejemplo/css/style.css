@@ -1,0 +1,21 @@
+.logo{
+	width: 30px;
+	height: 40px;
+}
+
+.letraLogo{
+	font-family: 'Galada', cursive;
+	font-size: 30px;
+}
+
+.centrarTexto{
+	text-align: center;
+}
+
+.arriba{
+	padding-top: 10px;
+}
+
+.ajustar{
+	text-align: justify;
+}
