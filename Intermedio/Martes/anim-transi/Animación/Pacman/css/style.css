@@ -1,0 +1,104 @@
+/*selector de etiqueta: porque afectan a todo lo que esté dentro del html*/
+body{
+	background-color: black; 
+}
+h1{
+	color: yellow;
+	text-align: center;
+}
+
+h2{
+	color: #0CEB70;
+	text-align: center;
+}
+
+div{
+	margin: auto;
+}
+
+
+/*-----------------------------------*/
+
+#mov{
+	height: 0px;
+	width: 0px;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-name: mov;
+	position: relative;
+}
+
+.packman{
+	margin: 50px 10px;
+}
+
+.packman2{
+	background: yellow;
+	height: 100px;
+	width: 200px;
+	border-radius: 0 0 100px 100px;
+	animation-name: packman1;
+	animation-duration: .60s;
+	animation-iteration-count: infinite;	
+}
+.packman1{
+	background: yellow;
+	height: 100px;
+	width: 200px;
+	border-radius: 100px 100px 0 0;	
+	animation-name: packman2;
+	
+	animation-duration: .60s;
+	animation-iteration-count: infinite;
+
+}
+
+
+
+/*-------------------------------------------*/
+
+
+
+@keyframes packman2 {
+	from {
+		transform: rotate(0deg);
+		left: 0px;
+		height: 90px;
+		width: 190px;
+
+	}
+	to {
+		transform: rotate(-45deg);
+		left: 0px;
+		height: 120px;
+		width: 220px;
+	}
+}
+@keyframes packman1 {
+	from {
+		transform: rotate(0deg);
+		left: 0px;
+	height: 90px;
+		width: 190px;
+
+	}
+	to {
+		transform: rotate(45deg);
+		left: 0px;
+		height: 120px;
+		width: 220px;
+
+	}
+}
+
+
+@keyframes mov{
+	0%{top: 0px; left: 0px; 
+	}
+	100%{left: 1100px; top: 0px;
+	}	
+}
+
+
+
+

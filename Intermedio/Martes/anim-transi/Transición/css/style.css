@@ -1,0 +1,22 @@
+footer{
+	margin-top:20%;
+	left: 45%;
+	position: relative;
+	width: 50%;
+	height: auto;
+}
+
+img{
+	margin:.2%;
+	width: 10%;
+	height: auto;
+	-webkit-transform: scale(1,1);
+	-webkit-transform-timing-function:ease-out;
+	-webkit-transition-duration:250ms;
+}
+
+img:hover{
+	-webkit-transform:scale(1.12,1.12);
+	-webkit-transition-timing-function:ease-out;
+	-webkit-transition-duration:100ms;
+}

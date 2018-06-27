@@ -1,0 +1,89 @@
+*{
+	margin:0px;
+	padding: 0px;
+	color:white;
+	font-family: helvetica;
+}
+
+div#producto{
+	top:40%;
+	left: 50%;
+	position: absolute;
+	transform:translate(-50%,-50%);
+}
+
+div#producto2{
+	top:40%;
+	left: 10%;
+	position: absolute;
+	transform:translate(-50%,-50%);
+}
+
+div#producto{
+	width: 200px;
+	height: 100px;
+	margin:30px;
+	background-image: url("../img/iphone.jpg");
+}
+
+
+
+div.gradiente{
+	border-radius: 10%;
+	width: 200px;
+	height: 100px;
+	background-color: rgba(31,31,31,0.6);
+	-webkit-transition:opacity 0.2s;
+	opacity: 0;
+}
+
+div#producto:hover div.gradiente{
+	opacity: 1;
+}
+
+/*Parte elegante*/
+h3.nombre{
+	position: absolute;
+	margin-left: 60px;
+	margin-top:-30px;
+	font-size: 20px;
+	-webkit-transition: margin 0.2s;
+}
+
+div#producto:hover h3.nombre{
+	margin-top: 10px;
+	 text-shadow: 2px 2px 2px black;
+}
+
+p.precio{
+	position: absolute;
+	margin-top:160px;
+	margin-left: 10px;
+	font-size: 20px;
+	-webkit-transition: margin 0.2s;
+}
+
+div#producto:hover p.precio{
+	margin-top: 60px;
+	margin-left: 10px;
+	text-shadow: 2px 2px 2px black;
+
+}
+
+
+p.mas{
+	position: absolute;
+	margin-top:160px;
+	margin-left: 170px;
+	font-size: 20px;
+	-webkit-transition: margin 0.2s;
+}
+
+div#producto:hover p.mas{
+	margin-top: 60px;
+	margin-left: 170px;
+		 text-shadow: 2px 2px 2px black;
+
+}
+
+

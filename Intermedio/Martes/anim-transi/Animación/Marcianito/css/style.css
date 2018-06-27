@@ -1,0 +1,23 @@
+
+/*---------------------------------*/
+
+.marcinito{
+	height: 0px;
+	width: 0px;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-name: marcianito;
+	position: relative;
+}
+
+/*-------------------------*/
+
+@keyframes marcianito{
+	0%{top: 0px; left: 0px; }
+	20%{left: 1150px; top: 0px;}
+	40%{left: 1150px; top: 350px;}
+	60%{left: 0px; top: 350px;}
+	80%{right: : 1150px; top: 350px;}
+	100%{top: 0px; left: 0px; }
+	
+}

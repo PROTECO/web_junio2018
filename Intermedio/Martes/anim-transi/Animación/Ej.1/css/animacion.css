@@ -1,0 +1,11 @@
+h1{
+	animation-duration: 3s;
+  animation-name: binvenidos;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes bienvenidos {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}

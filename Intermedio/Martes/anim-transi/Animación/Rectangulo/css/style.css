@@ -1,0 +1,67 @@
+/*selector de etiqueta: porque afectan a todo lo que esté dentro del html*/
+body{
+	background-color: cyan; 
+}
+h1{
+	color: #095FEE;
+	text-align: center;
+}
+
+h2{
+	color: #095FEE;
+	text-align: center;
+}
+
+div{
+	margin: auto;
+}
+
+
+/*-----------------------------------*/
+
+.rectangulo{
+	width: 600px;
+	height: 100px;
+	background-color: #FFCC00;
+	animation-name: rectangulo;
+	animation-duration: 10s;
+	animation-delay: 5s; 
+	/*animation-iteration-count: infinite;*/
+}
+
+
+
+/*Elemento que aplicará animación al selector*/
+
+@keyframes rectangulo{
+	0%{background-color: #FFCC00;
+		width: 500px;
+		height: 100px;
+	}
+	25%{background-color: #B1FE0B;
+		width: 400px;
+		height: 100px;
+	}
+	50%{background-color: #00FFB4;
+		width: 300px;
+		height: 100px;
+	}
+	75%{background-color: #009CFF;
+		width: 400px;
+		height: 100px;
+	}
+
+	100%{background-color: #FFFFFF;
+		width: 600px;
+		height: 100px;
+	}
+}
+
+
+
+
+
+
+
+
+

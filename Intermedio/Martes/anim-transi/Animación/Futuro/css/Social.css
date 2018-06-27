@@ -1,0 +1,44 @@
+body{
+	background-size: 100% 1000px;
+	overflow: hidden;
+	background-image: url("../img/ciudad.jpg");
+}
+
+.Social{
+	width: 120px;
+	height: 50px;
+	background-size: 100% 100%;
+	position: absolute;
+}
+
+.uno{
+	background-image: url("../img/icon8/facebook.png");
+	animation: facebook 40s infinite;
+}
+
+.dos{
+	margin-top: 60px;
+	background-image: url("../img/icon8/twitter.png");
+	animation: twitter 40s infinite;
+}
+
+.tres{
+	margin-top: 120px;
+	background-image: url("../img/icon8/instagram.png");
+	animation: instagram 30s infinite;
+}
+
+@keyframes facebook{
+	from{margin-left: -30%;}
+	to{margin-left: 100%;}
+}
+
+@keyframes twitter{
+	from{margin-left: 100%;}
+	to{margin-left: -30%;}
+}
+
+@keyframes instagram{
+	from{margin-left: -30%;}
+	to{margin-left: 100%;}
+}

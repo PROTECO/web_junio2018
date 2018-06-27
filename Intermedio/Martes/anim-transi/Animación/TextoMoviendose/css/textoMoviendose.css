@@ -1,0 +1,17 @@
+h1 {
+  animation-duration: 3s;
+  animation-name: bienvenidos;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes bienvenidos { /*from*/
+  0% {
+    margin-left: 5%;
+    width: 10%; 
+  }
+
+  100% {  /*to*/
+    margin-left: 0%;
+    width: 10%;
+  }
+}
