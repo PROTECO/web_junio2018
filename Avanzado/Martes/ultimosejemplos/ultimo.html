@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Último</title>
+</head>
+<body>
+	<input id="miinput" type="text" value="Valor prederterminado">
+	<button id="boton">¿Qué quiéres poner? </button>
+	<div id="midiv"> Contenido del div</div>
+</body>
+<script>
+
+	document.getElementById("boton").onclick=function(){
+		var texto = document.getElementById("miinput").value;
+		document.getElementById("midiv").innerHTML =texto;
+	}
+
+</script>
+</html>

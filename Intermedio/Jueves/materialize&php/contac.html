@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>EC</title>
+  <link rel="shortcut icon" type="image/png" href="img/icono.png">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <link rel="stylesheet" href="css/estilo.css">
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body>
+  <!--Navbar-->
+  <nav>
+    <div class="nav-wrapper red lighten-3">
+      <a href="index.html" class="brand-logo"><img src="img/icono.png" alt="logo"></a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="dg.html">Datos Generales</a></li>
+        <li><a href="reg.html">Registro</a></li>
+        <li><a href="leycos.html">Leyes y costumbres</a></li>
+        <li><a href="contac.html">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="dg.html">Datos Generales</a></li>
+    <li><a href="reg.html">Registro</a></li>
+    <li><a href="leycos.html">Leyes y costumbres</a></li>
+    <li><a href="contac.html">Contacto</a></li>
+  </ul>
+
+  <main>
+    <div class="container">
+    <h1>Contacto</h1>
+      <div class="row">
+        <div class="col m6">
+          <form action="mensaje.php" method="post">
+            <div class="row">
+              <div class="input-field col s6">
+                <i class="material-icons prefix">account_circle</i>
+                <input id="icon_prefix" type="text" class="validate" name="nombre" required>
+                <label for="icon_prefix">Nombre</label>
+              </div>
+              <div class="input-field col s6">
+                <i class="material-icons prefix">mail</i>
+                <input id="email" type="email" class="validate" name="correo" required>
+                <label for="email" data-error="Correo no valido" data-success="Correo valido">Email</label>
+              </div>
+            </div>
+            <h6>Mensaje</h6>
+            <div class="input-field col s12">
+              <textarea name="mensaje" id="textarea1" class="materialize-textarea"></textarea>
+              <label for="textarea1" required>Textarea</label>
+            </div>
+            <input type="submit" value="Enviar" class="btn black right">
+          </form>
+        </div>
+        <div class="col m6">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.926370164798!2d-99.21584928572884!3d19.415587046257038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d20192eb92f475%3A0x630e73381656973d!2sEmbajada+de+la+Rep%C3%BAblica+de+Corea!5e0!3m2!1ses!2smx!4v1530198535503" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="page-footer red lighten-3">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Embajada de Corea</h5>
+          <p class="grey-text text-lighten-4">Las personas mexicanas No necesitan visa para viajar</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Links de contacto</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="www.facebook.com">Facebook</a></li>
+            <li><a class="grey-text text-lighten-3" href="www.twitter.com">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2018 PROTECO
+        <a class="grey-text text-lighten-4 right" href="www.proteco.mx">sitio alterno</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--JavaScript at end of body for optimized loading-->
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/app.js"></script> 
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Cambiando el contenido</title>
+</head>
+<body>
+
+	<button id="cambiaText">Cambia el primer div</button>
+	<div id="primerdiv">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+</div>
+<button id="concatenar">Concatenar al segundo div</button>
+<div id="segundodiv">El instructor titular es: </div>
+
+<button id="creador">Crear texto</button>
+<div id="tercerdiv"></div>
+
+</body>
+<script>
+	document.getElementById("cambiaText").onclick=function(){
+		console.log("Si sirve!");
+		document.getElementById("primerdiv").innerHTML="Algo";
+	}
+	document.getElementById("concatenar").onclick=function() {
+		document.getElementById("segundodiv").innerHTML=document.getElementById("segundodiv").innerHTML + " el mejor!";
+	}
+	document.getElementById("creador").onclick=function(){
+		document.getElementById("tercerdiv").innerHTML="<h3>Hola mundo</h3>";
+	}
+</script>
+</html>

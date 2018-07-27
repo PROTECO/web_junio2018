@@ -1,0 +1,14 @@
+body{
+	overflow-x: hidden;
+}
+.centrarTexto{
+	text-align: center;
+}
+.justificarTexto{
+	text-align: justify;
+}
+/*Código para hacer responsiva una imagen*/
+.ajustarLogo{
+	width: 15%;
+	height: auto;
+}
