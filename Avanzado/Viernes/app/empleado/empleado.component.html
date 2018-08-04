@@ -1,0 +1,51 @@
+<h3>{{nombre_componente}}</h3>
+<div *ngIf="cambiador==true">
+<strong>Instructor del mes</strong>
+<br>
+<button (click)="cambiar_mostrar(false)" >Mostrar instructores estrella</button>
+<ul >
+	<li>Nombre: {{empleado.nombre}}</li>
+	<li>Edad : {{empleado.edad}}</li>
+	<li>Cargo: {{empleado.cargo}}</li>
+	<li>Contradado: {{empleado.contratado}}</li>
+</ul>
+</div>
+
+<div *ngIf="cambiador==false">
+<strong>Instructores estrella</strong>
+<br>
+<button (click)="cambiar_mostrar(true)">Mostrar instructor del mes</button>
+<ul >
+	<li>Nombre: {{instructores[0].nombre}}</li>
+	<li>Edad: {{instructores[0].edad}}</li>
+	<li>Cargo: {{instructores[0].cargo}}</li>
+	<li>Contratado: {{instructores[0].contratado}}</li>
+</ul>
+<ul>
+	<li>Nombre: {{instructores[1].nombre}}</li>
+	<li>Edad: {{instructores[1].edad}}</li>
+	<li>Cargo: {{instructores[1].cargo}}</li>
+	<li>Contratado: {{instructores[1].contratado}}</li>
+</ul>
+<ul>
+	<li>Nombre: {{instructores[2].nombre}}</li>
+	<li>Edad: {{instructores[2].edad}}</li>
+	<li>Cargo: {{instructores[2].cargo}}</li>
+	<li>Contratado: {{instructores[2].contratado}}</li>
+</ul>
+</div>
+<hr>
+<h3>Listado de empleados con directiva ngFor</h3>
+<ul>
+	<li *ngFor="let empleado of instructores;let i=index">
+		<p>Instructor {{i+1}}</p>
+		<ul>
+			<li>{{empleado.nombre}}</li>
+			<li>{{empleado.edad}}</li>
+			<li>{{empleado.cargo}}</li>
+			<!--<li>{{empleado.contratado}}</li>-->
+			<li *ngIf="empleado.contratado==true">Tiene contrato</li>
+			<li *ngIf="empleado.contratado==false">No tiene contrato</li>
+		</ul>
+	</li>
+</ul>
